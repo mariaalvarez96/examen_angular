@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="title">Inicio de sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+    <mat-card class="example-card">
+      <form>
+        <mat-form-field class="example-full-width">
+          <input matInput [(ngModel)]="user" type="text" name="usuario" placeholder="Introducir usuario">
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <input type="password"  matInput [(ngModel)]="pwd" #password name="password" placeholder="Introducir contraseña">
+        </mat-form-field><br>
+        <button mat-stroked-button color="primary" type="submit" (click)="logIn()" id="loginButton">Submit</button>
+      </form>
+    </mat-card>
+</ion-content>
